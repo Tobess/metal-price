@@ -1,0 +1,137 @@
+{
+  // 租赁业务
+  "rent": {
+    // 注册红包(元)
+    "register": {
+      "red_packet_amount":0,
+      "red_packet_switch":false
+    },
+    // 租金
+    "rental": {
+      // 商户
+      "merchant":{
+        // 分润比率
+        "profit_ratio":0,
+        // 结算间隔天数
+        "settle_days":0,
+        // 是否结算
+        "settle_on": false,
+        // 理赔(逾期未还自动强制按购买处理的结算)
+        "claims":{
+          "settle_days":"1",
+          "settle_on":true
+        }
+
+      },
+      // 消费者
+      "consumer": {
+        // 售价租金比率
+        "sale_ratio":0
+      }
+    },
+    // 逾期
+    "overdue": {
+      // 消费者
+      "consumer": {
+        // 逾期宽限天数
+        "limit_days":0,
+        // 逾期费用比率
+        "rent_day_ratio":0
+      }
+    },
+    // 单据费用
+    "bill": {
+      // 消费者
+      "consumer": {
+        // 费用规则
+        "fee_rules":[
+          {
+            "start": 0,
+            "end": 100,
+            "fee":10
+          }
+        ]
+      }
+    },
+    // 保证金
+    "deposit": {
+      // 消费者
+      "consumer": {
+        // 费用规则
+        "fee_rules":[
+          {
+            "start": 0,
+            "end": 100,
+            "fee":10
+          }
+        ]
+      }
+    },
+    // 授信系数
+    "credit": {
+      // 商品授信系数
+      "goods_ratio": 0,
+      // 门店授信系数
+      "shop_ratio": 0
+    },
+    // 异议
+    "dissent": {
+      // 商户
+      "merchant":{
+        // 损坏赔付比率
+        "damage_ratio":0,
+        // 缺失赔付比率
+        "hiatus_ratio": 0,
+        // 结算间隔天数
+        "settle_days":0,
+        // 是否结算
+        "settle_on": false
+      },
+      // 消费者
+      "consumer": {
+        // 异议有效天数
+        "dissent_days":0,
+        // 损坏标价赔付比率
+        "damage_sale_ratio":0,
+        // 损坏赔付上限
+        "damage_max":0,
+        // 缺失标价赔付比率
+        "hiatus_ratio":0
+      }
+    },
+    // 租期
+    "rent_times":[7, 15],
+    // 续租
+    "re_rent_times":[7, 15]
+  },
+  // 提现业务
+  "withdraw": {
+    // 商户
+    "merchant":{
+      // 提现最小金额限制
+      "withdraw_min":100,
+      // 提现最大金额限制
+      "withdraw_max": 1000,
+      // 三方费用每笔
+      "third_fee":0,
+      // 平台费用每笔
+      "platform_fee": 0,
+      // 到账天数
+      "settle_days":0
+    }
+  },
+  // 贷款业务
+  "credit": {
+    // 商户
+    "merchant":{
+      // 贷款利率
+      "credit_ratio":0,
+      // 逾期利率
+      "overdue_ratio": 0,
+      // 贷款倍率
+      "credit_times":0,
+      // 回款周期(天)
+      "payment_days":0
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="treeselect.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.js"></script>
+    <script type="text/javascript" src="treeselect.js"></script>
+</head>
+<body>
+
+<input type="text" value="1231" id="tree">
+<input type="button" value="button" id="btn">
+
+<script type="text/javascript">
+    $(function(){
+    var clsTreeEle = $("#tree").treeSelectChoose({width: 144,
+        parseListDataFn:function(){return {header:'测试数据', data:[{id:1,title:'金大福',pid:0},{id:2,title:'周生生',pid:0}]}}, onItemClicked: function(item){
+        $("#tree").val(item.id+','+item.title);
+        alert(123);
+    }, parentCanSelect: false});
+
+    $("#btn").click(function(e) {
+        clsTreeEle.toggle();
+    });
+    });
+</script>
+
+</body>
+</html>

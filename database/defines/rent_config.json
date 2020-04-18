@@ -1,0 +1,119 @@
+// 租赁配置项及设置描述
+{
+  // 租赁网址配置
+  "rent.url": {
+    // 租赁细则
+    "rules": "",
+    // 免押租赁协议
+    "agreement": "",
+    // 押金用途承诺书
+    "promise": ""
+  },
+  // 赔付描述
+  "compensate": {
+    // 损坏
+    "bad": {
+      "title": "损坏",
+      "desc": [
+        "损坏A",
+        "损坏B"
+      ]
+    },
+    // 丢失
+    "hiatus": {
+      "title": "丢失",
+      "desc": [
+        "丢失A",
+        "丢失B"
+      ]
+    }
+  },
+  // 芝麻
+  "risk.sesame": {
+    "max_ratio": "最大值",
+    "data": [
+      {
+        "start": "开始值",
+        "end": "结束值",
+        "ratio": "权重",
+        "memo": "备注"
+      }
+    ]
+  },
+  // 颜值
+  "risk.face": {
+    "max_ratio": "最大值",
+    "data": [
+      {
+        "start": "开始值",
+        "end": "结束值",
+        "ratio": "权重",
+        "memo": "备注"
+      }
+    ]
+  },
+  // 在网时长
+  "risk.online": {
+    "max_ratio": "最大值",
+    "data": [
+      {
+        "type": "类型",
+        "type_name": "类型名字",
+        "ratio": "权重",
+        "memo": "备注"
+      }
+    ]
+  },
+  // 历史消费
+  "risk.use": {
+    "max_ratio": "最大值",
+    "data": [
+      {
+        "start": "开始值",
+        "end": "结束值",
+        "ratio": "权重",
+        "memo": "备注"
+      }
+    ]
+  },
+  // 个人征信
+  "risk.credit": {
+    "data": [
+      {
+        "type": "类型",
+        "type_name": "类型名字",
+        "ratio": "权重",
+        "memo": "备注"
+      }
+    ]
+  },
+  // 个人征信金算员工加分项目
+  "risk.employee": 12,
+  // 自动转账开关
+  "transfer.switch": "off",
+  // off-关on-开
+
+  // 会员积分政策
+  "member.policy.integral": {
+    "limit": 100,
+    // 满多少金额
+    "value": 1
+    // 积多少分
+  },
+  // 企业认证配置
+  "merchant.auth": {
+    // 帮助内容网页地址
+    "help-url": "",
+    // 认证金额
+    "auth-amount": 0
+  },
+  // APP首页引导功能url配置
+  "rent.guides-url": {
+    // 免费体验
+    "free": "",
+    // 限时体验
+    "limit": "",
+    // 了解玩法
+    "guide": ""
+  }
+}

@@ -1,0 +1,16 @@
+{
+  // 系统缓存
+  // 完整的KEY名称为叶子节点
+  "sys": {
+    "sys_sso_token:{token}": "授权令牌的鉴权用户信息",
+    "sys_sso_token_first:{token}": "授权令牌的鉴权用户信息",
+    "sys_sso_rent:{id}": "租赁用户信息",
+    "sys_config_db_bus_{cid}": "获得商户平台数据库连接配置中数据库数据",
+    "sys_config_rent_value:{key}": "获得商户平台数据库连接配置中数据库数据",
+    "sys.rent.goods.rule:{cid}.{sid}": "共享珠宝门店商品签约分类",
+    "sys.rent.level:{cid}.{sid}": "共享珠宝门店等级信息",
+    "sys.limiter:szxh:{uid}": "【聚合数据】每日每用户累计调用次数",
+    "sys.limiter:zmxy:{uid}": "【芝麻信用】每日每用户累计调用次数",
+    "sys.rent:user:contacts:{uid}": "租赁用户是否上传过联系人"
+  }
+}
