@@ -15,17 +15,15 @@ class CreateDataTable extends Migration
     {
         Schema::create('data', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code', 30)->unique();
-            $table->string('title');
+            $table->string('key', 30)->unique();
+            $table->string('name');
             $table->unsignedTinyInteger('type')->default(0);
-            $table->string('in_price')->decimal(18,2)->default(0);
-            $table->string('out_price')->decimal(18,2)->default(0);
-            $table->string('in_price_delta')->decimal(18,2)->default(0);
-            $table->string('out_price_delta')->decimal(18,2)->default(0);
-            $table->string('top_price')->decimal(18,2)->default(0);
-            $table->string('bot_price')->decimal(18,2)->default(0);
-
-            $table->timestamps();
+            $table->string('buy')->decimal(18,2)->default(0);
+            $table->string('send')->decimal(18,2)->default(0);
+            $table->string('buy_delta')->decimal(18,2)->default(0);
+            $table->string('send_delta')->decimal(18,2)->default(0);
+            $table->string('top')->decimal(18,2)->default(0);
+            $table->string('foot')->decimal(18,2)->default(0);
         });
     }
 
