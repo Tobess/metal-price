@@ -375,7 +375,7 @@
 
     function reload(){
 
-        $.post('/getPriceData',{},function(result){
+        $.post('getPriceData',{},function(result){
             if(result.statue=="Y"){
                 $("#sfkp").html("<font color='green' >&nbsp&nbsp&nbsp开盘中</font>");
                 $("#sfkpdiv").attr("style","display:none;");//隐藏div
@@ -422,7 +422,7 @@
 
 
     function initPage(){
-        $.post('/getPriceData',{},function(result){
+        $.post('getPriceData',{},function(result){
             if(result.statue=="Y"){
                 $("#sfkp").html("<font color='green'>开盘中</font>");
                 $("#sfkpdiv").attr("style","display:none;");//隐藏div
