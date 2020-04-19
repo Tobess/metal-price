@@ -430,6 +430,7 @@
                 $("#sfkp").html("<font color='red'>关盘中</font>");
                 $("#sfkpdiv").attr("style","display:block;");//显示div
             }
+            $("#serverTime").html(result.time);
             createTr(result.datalist);
         },'json');
         setTime();
