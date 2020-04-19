@@ -24,11 +24,6 @@
         <!-- nabar right -->
         <ul class="nav navbar-nav navbar-right">
             <li class="visible-lg">
-                <a class="text-danger" href="#">
-                    <span class="hidden-xs">{{ env('APP_ENV') }}</span>
-                </a>
-            </li>
-            <li class="visible-lg">
                 <a href="#" ui-fullscreen>
                     <span class="fa fa-expand"></span>
                 </a>
