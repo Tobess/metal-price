@@ -5,7 +5,7 @@
             <span>行情</span>
         </li>
         <li {{ starts_with(request()->getRequestUri(), '/console') ? 'class=active' : '' }}>
-            <a href="/console">
+            <a href="/console/">
                 <i class="glyphicon glyphicon-stats icon" ui-color></i>
                 <span>实时行情</span>
             </a>

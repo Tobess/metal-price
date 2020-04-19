@@ -21,6 +21,6 @@ Route::post('getPriceData', 'ConsoleController@getGoldPriceData');
 
 // 管理平台
 Route::middleware('auth')->prefix('console')->group(function () {
-    Route::get('', 'ConsoleController@getIndex');
+    Route::get('/', 'ConsoleController@getIndex');
     Route::post('config', 'ConsoleController@postPriceConfig');
 });
