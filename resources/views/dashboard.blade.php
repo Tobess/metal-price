@@ -269,7 +269,7 @@
     <div id="formModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myShopModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form method="POST" action="/console/config">
+                <form method="POST" action="config">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myShopModalLabel">销售/回购调价</h4>
